@@ -104,6 +104,9 @@ ul {list-style: none;}
     margin-bottom:5px;
 }
 
+.list .content-wrapper .content li:last-child {
+    margin-bottom:0;
+}
 .list:hover {
     background:rgba(255,255,255,.2);
 }
