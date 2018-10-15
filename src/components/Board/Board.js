@@ -2,7 +2,7 @@ import React from 'react';
 
 const boardsAux = [{title:'board1'}, {title:'board2'}];
 
-const Boards = () => {
+const Board = () => {
   return (
     <div>
     <div>
@@ -12,7 +12,7 @@ const Boards = () => {
       <h3>Personal Boards</h3>
     </div>
 
-      <ui>
+      <ul>
         {
           boardsAux.map( (board) => {
             return (
@@ -24,7 +24,7 @@ const Boards = () => {
                     </span>
                   </a>
                 </li>
-              ) 
+              )
             })
           }
         <li>
@@ -35,9 +35,9 @@ const Boards = () => {
             </span>
           </a>
         </li>
-      </ui>
+      </ul>
     </div>
     )
 }
 
-export default Boards;
+export default Board;
