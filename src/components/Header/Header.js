@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
        <span className="header-logo-default"></span>
       </a>
     </div>
-  ) 
+  )
 }
 
 export default Header;
