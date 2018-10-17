@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <Layout>
-        <h2>Soy er layout</h2>
+        <h2>Testing fixed navbar, if you can't see me it works!</h2>
       </Layout>
     );
   }

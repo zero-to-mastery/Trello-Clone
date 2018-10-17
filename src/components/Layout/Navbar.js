@@ -16,8 +16,12 @@ export default class Navbar extends Component {
           <Menu.Item name="home" active={true} className="Trello-Navbar-Item">
             <Icon fitted name="home" inverted />
           </Menu.Item>
-          <Menu.Item name="home" active={false} className="Trello-Navbar-Item">
-            <Icon fitted name="home" inverted />
+          <Menu.Item
+            name="clipboard"
+            active={false}
+            className="Trello-Navbar-Item"
+          >
+            <Icon fitted name="clipboard" inverted />
             <span className="Trello-Navbar-Item--content">Boards</span>
           </Menu.Item>
           <Menu.Item className="Trello-Navbar-Item-Search">
