@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import Header from './components/Header/Header.js';
-import Board from './components/Board/Board.js';
+import React, { Component } from "react";
+import "./index.css";
+import Layout from "./components/Layout/Layout";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-
-        <Board />
-      </div>
+      <Layout>
+        <h2>Soy er layout</h2>
+      </Layout>
     );
   }
 }
