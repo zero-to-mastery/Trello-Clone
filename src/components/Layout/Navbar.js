@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Icon } from "semantic-ui-react";
+import { Menu, Icon, Search } from "semantic-ui-react";
 export default class Navbar extends Component {
   state = {};
   render() {
@@ -12,24 +12,28 @@ export default class Navbar extends Component {
         >
           <span className="Trello-Navbar--Logo-default" />
         </a>
-
-        <Menu.Item name="home" active={true} className="Trello-Navbar--item">
-          <Icon fitted name="home" inverted />
-        </Menu.Item>
-        <Menu.Item name="home" active={false} className="Trello-Navbar--item">
-          <Icon fitted name="home" inverted />
-          <span className="Trello-Navbar--item-Content">Tableros</span>
-        </Menu.Item>
+        <Menu.Menu position="left">
+          <Menu.Item name="home" active={true} className="Trello-Navbar-Item">
+            <Icon fitted name="home" inverted />
+          </Menu.Item>
+          <Menu.Item name="home" active={false} className="Trello-Navbar-Item">
+            <Icon fitted name="home" inverted />
+            <span className="Trello-Navbar-Item--content">Boards</span>
+          </Menu.Item>
+          <Menu.Item className="Trello-Navbar-Item-Search">
+            <Search loading={false} className="Trello-Navbar-Item--input" />
+          </Menu.Item>
+        </Menu.Menu>
 
         <Menu.Menu position="right">
-          <Menu.Item name="brand" className="Trello-Navbar--item">
-            <Icon fitted name="home" inverted />
+          <Menu.Item name="plus" className="Trello-Navbar-Item">
+            <Icon fitted name="plus" inverted />
           </Menu.Item>
-          <Menu.Item name="brand" className="Trello-Navbar--item">
-            <Icon fitted name="home" inverted />
+          <Menu.Item name="info" className="Trello-Navbar-Item">
+            <Icon fitted name="info" inverted />
           </Menu.Item>
-          <Menu.Item name="brand" className="Trello-Navbar--item">
-            <Icon fitted name="home" inverted />
+          <Menu.Item name="bell" className="Trello-Navbar-Item">
+            <Icon fitted name="bell" inverted />
           </Menu.Item>
         </Menu.Menu>
       </Menu>
