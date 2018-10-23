@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <Layout>
-        <h2>Testing fixed navbar, if you can't see me it works!</h2>
+        <p>You can not see this, but if you change this to any h1-h6 tag you would be able to see the text.</p>
       </Layout>
     );
   }
