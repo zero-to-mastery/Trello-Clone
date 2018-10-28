@@ -1,1 +1,80 @@
-.Trello-Navbar{background:#026aa7!important;font-family:Helvetica Neue,Arial,Helvetica,sans-serif;max-height:32px}.Trello-Navbar--Logo{bottom:0;display:block;height:30px;left:50%;margin-left:-40px;opacity:.5;position:absolute;top:5px;width:30px;text-align:center;transition:.1s ease;z-index:2}.Trello-Navbar--Logo-default{background-image:url(https://user-images.githubusercontent.com/13432607/29981988-82cec158-8f58-11e7-9f26-473079c2a9b1.png);background-position:100% 0;background-repeat:no-repeat;background-size:35px 30px;height:30px;position:absolute;right:0;top:0;width:80px}.Trello-Navbar .Trello-Navbar-Item{background:hsla(0,0%,100%,.3)!important;margin:.2em;color:#fff!important;font-size:1.1em;border-radius:3px;cursor:pointer}.Trello-Navbar .Trello-Navbar-Item .Trello-Navbar-Item--content{margin-left:.4em;font-weight:700}.Trello-Navbar-Item-Search .Trello-Navbar-Item--input input{background-color:hsla(0,0%,100%,.3)!important;border-radius:3px!important}.Trello-Navbar-Item-Search .Trello-Navbar-Item--input i.search.icon{color:#fff!important;font-size:1.2em}@font-face{font-family:trellicons;src:url(https://a.trellocdn.com/dist/fonts/trellicons.bf57a510b0c02a2e1611.eot);src:url(https://a.trellocdn.com/dist/fonts/trellicons.bf57a510b0c02a2e1611.eot#iefix) format("embedded-opentype"),url(https://a.trellocdn.com/dist/fonts/trellicons.a6d87a53cce7f4d089dd.ttf) format("truetype"),url(https://a.trellocdn.com/dist/fonts/trellicons.ee39204bdadeaa6edf0a.woff) format("woff"),url(https://a.trellocdn.com/dist/fonts/trellicons.6f1a7f1b268d5117df93.svg#trellicons) format("svg");font-weight:400;font-style:normal}
+.Trello-Navbar {
+  background: #026aa7 !important;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  height: 40px;
+}
+.Trello-Navbar--Logo {
+  bottom: 0;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -40px;
+  opacity: 0.5;
+  position: absolute;
+  top: 5px;
+  width: 30px;
+  text-align: center;
+  transition: 0.1s ease;
+  z-index: 2;
+}
+.Trello-Navbar--Logo-default {
+  background-image: url(https://user-images.githubusercontent.com/13432607/29981988-82cec158-8f58-11e7-9f26-473079c2a9b1.png);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 35px 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+}
+.Trello-Navbar .Trello-Navbar-Item {
+  background: hsla(0, 0%, 100%, 0.3) !important;
+  margin: 0.2em;
+  color: #fff !important;
+  font-size: 1.1em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.Trello-Navbar .Trello-Navbar-Item .Trello-Navbar-Item--content {
+  margin-left: 0.4em;
+  font-weight: 700;
+}
+.Trello-Navbar-Item-Search .Trello-Navbar-Item--input input {
+  background-color: hsla(0, 0%, 100%, 0.3) !important;
+  border-radius: 3px !important;
+  transition: width 0.3s ease;
+}
+
+.Trello-Navbar-Item-Search .Trello-Navbar-Item--input input:focus {
+  width: 20rem;
+  animation: scale-out 0.4s ease-out;
+}
+
+.Trello-Navbar-Item-Search .Trello-Navbar-Item--input i.search.icon {
+  color: #fff !important;
+  font-size: 1.2em;
+}
+@font-face {
+  font-family: trellicons;
+  src: url(https://a.trellocdn.com/dist/fonts/trellicons.bf57a510b0c02a2e1611.eot);
+  src: url(https://a.trellocdn.com/dist/fonts/trellicons.bf57a510b0c02a2e1611.eot#iefix)
+      format("embedded-opentype"),
+    url(https://a.trellocdn.com/dist/fonts/trellicons.a6d87a53cce7f4d089dd.ttf)
+      format("truetype"),
+    url(https://a.trellocdn.com/dist/fonts/trellicons.ee39204bdadeaa6edf0a.woff)
+      format("woff"),
+    url(https://a.trellocdn.com/dist/fonts/trellicons.6f1a7f1b268d5117df93.svg#trellicons)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes scale-out {
+  from {
+    width: 15rem;
+  }
+  to {
+    width: 20rem;
+  }
+}
